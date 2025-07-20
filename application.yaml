@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: global-defaults
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

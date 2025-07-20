@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: notification-service
+
+notification:
+  provider: dummy
+  retry-count: 3
+  fallback-mode: log-only

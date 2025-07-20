@@ -15,13 +15,13 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/user/**
+            - Path=/api/users/**
           filters:
             - StripPrefix=1
         - id: property-service
           uri: lb://property-service
           predicates:
-            - Path=/property/**
+            - Path=/api/property/**
           filters:
             - StripPrefix=1
 
